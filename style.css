@@ -43,14 +43,24 @@ small {
   color: rgb(98, 98, 98);
 }
 input {
+  background: linear-gradient(
+    135deg,
+    rgb(255, 255, 255, 0.1),
+    rgb(255, 255, 255, 0)
+  );
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px 0 rgb(0, 0, 0, 0.37);
   padding-left: 5px;
   border: none;
+  outline: none;
   border-radius: 2px;
   width: 70%;
   height: 25px;
   font-family: "ABeeZee", serif;
 }
 input[type="submit"] {
+  cursor: pointer;
   width: 40%;
   height: 30px;
   border-radius: 30px;
